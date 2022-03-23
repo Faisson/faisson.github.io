@@ -3,42 +3,48 @@
     <head>
         <title>Calculate IMC</title>
         <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="./calcule.js"></script>
+        <link rel="shortcut icon" href="/Imagem/favicon.ico" type="image/x-icon" />
     </head>
     <body>   
         <main class="container">
         
             <div class="container-header">
                 <h3>HEALTH AND WELLNESS</h3>
-                <h1>CALCULATE YOUR BMI</h1>
-                
+                <h1>CALCULATE YOUR BMI</h1>   
             </div>
 
             <div class="container-form">
                 <img src="./Imagem/img.webp" alt="">
-                <form action="get" class="form">
+                <form class="form" id="frm">
                     <label>Genere</label>
-                    <input list="browsers">
+                    <input list="browsers" id="genero">
                     <datalist id="browsers">
                     <option value="Masculino">
                     <option value="Feminino">
                     <option value="Não binario">
                     </datalist>
                     <label>Age</label>
-                    <input type="number">
+                    <input type="number" id="age">
                     <label>Height</label>
-                    <input type="number">
+                    <input type="number" id="height">
                     <label>Weight</label>
-                    <input type="number">
+                    <input type="number" id="weight">
                     <div class="button-primary">
-                        <button>CALCULATE</button>
+                        <button onclick="CalcBMI()">CALCULATE</button>
                     </div>
                 </form>
 
-                <div >
+
+                <div class="container-right" >
                     <h2 class="container-title">YOUR HEALTH FIRST</h2>
                     <p class="container-paragraph">
                         The caluculation is done with the formula weight on hight and is
                         the international measure to estimate the ideal weight of a person.
+                    </p>
+                    
+                    <p id="result">
+                        Your IBM here
                     </p>
                 </div>
             </div>

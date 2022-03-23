@@ -1,7 +1,12 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: antiquewhite;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 img{
@@ -24,13 +29,42 @@ input{
     margin: 0.6rem;
 }
 
+label{
+    width: 0rem;
+    height: 0rem;
+    margin: 0.6rem;
+    font-family: sans-serif;
+}
+
+p{
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+
+h1{
+    color: black;
+}
+
+.container{
+    background-color: white;
+    border-radius: 0px 15px 15px 15px;;
+    width: 60%;
+    height: auto;
+}
+
 .container-paragraph{
     text-align: justify;
+    font-family: Impact, sans-serif;
+    color: gray;
+    line-height: 2rem;
 }
 
 .container-title{
     display: flex;
+    font-size: 1.2em;
     justify-content: center;
+    color:rgb(77, 75, 75);
+    font-family: sans-serif;
 }
 
 .button-primary{
@@ -39,17 +73,11 @@ input{
     margin: 1vh;
 }
 
-.container{
-    background-color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin:4rem;
-    width: 60%;
-    height: 50%;
-}
-
 .container-header{
-    margin: 0px 10px;
+    margin: 0rem 2rem;
+    color: gray;
+    line-height: 0.8rem;
+    font-family: Impact, fantasy;
 }
 
 .container-form{
@@ -63,6 +91,16 @@ input{
     margin: 15px;
 }
 
+.container-right{
+    margin-right: 2rem;
 
+}
+
+#result{
+    display: flex;
+    justify-content: flex-end;
+    font-size: x-large;
+
+}
 
 
